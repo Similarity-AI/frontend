@@ -29,7 +29,7 @@ function App() {
     <>
       <h1>API de Similaridade</h1>
       <section className='inputSection'>
-        <label for="searchInput" className='searchLabel'>Insira uma pergunta ou texto:</label>
+        <label htmlFor="searchInput" className='searchLabel'>Insira uma pergunta ou texto:</label>
         <input id='searchInput' value={inputValueSearch} onChange={(e) => setInputValueSearch((e.target as HTMLInputElement).value)} className='input' />
         <button onClick={getApi} className='button' disabled={loading}>Enviar</button>
       </section>
